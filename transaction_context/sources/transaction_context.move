@@ -1,9 +1,10 @@
-/*
-/// Module: transaction_context
-module transaction_context::transaction_context;
-*/
+module transaction_context::transaction_context {
+    use sui::tx_context::TxContext;
 
-// For Move coding conventions, see
-// https://docs.sui.io/concepts/sui-move-concepts/conventions
+    public fun get_millis(ctx: &TxContext): u64 {
+        // TxContext'ten milisaniye alınır (örnek)
+        0
+    }
+}
 
 
